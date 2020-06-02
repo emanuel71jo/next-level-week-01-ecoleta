@@ -51,7 +51,7 @@ class PointsController {
       longitude,
       city,
       uf,
-      image: 'image-fake'
+      image: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
     };
 
     const insertedIds = await trx('points').insert(point);
