@@ -3,7 +3,8 @@ import Knex from 'knex';
 export async function up(knex: Knex) {
   return knex.schema.createTable('point_items', table => {
     table.increments('id').primary;
-
+    table.integer('point_id').references('id').inTable('points');
+    table.integer('items_id').references('id').inTable('items');
   });
 }
 
