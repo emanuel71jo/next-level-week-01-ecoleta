@@ -9,7 +9,7 @@ class ItemsController {
       return {
         id: item.id,
         title: item.title,
-        url_image: `http://localhost:3333/uploads/${item.image}`
+        url_image: `http://192.168.1.242:3333/uploads/${item.image}`
       };
     });
 
